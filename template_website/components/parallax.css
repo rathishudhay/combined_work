@@ -1,0 +1,84 @@
+.parallax-main {
+    /* height: 300vh; */
+    height: auto;
+    overflow: hidden;
+}
+
+.parallax {
+    width: 100vw;
+    /* height: 200vh; */
+    /* height: auto; */
+    /* background: #000; */
+    margin: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+    height: 200vh;
+}
+
+/* .section1::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url('https://a.storyblok.com/f/133769/1920x2716/5c24d6b467/exo-ape-hero-1.jpg/m/2400x3395/filters:quality(90)') top center;
+    background-size: cover;
+    transform: translateZ(-1px) scale(2);
+}
+
+.section1 {
+    width: 100%;
+    min-height: 400vh;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.text {
+    position: absolute;
+    top: 20%;
+    color: white;
+    font-size: 15vw;
+    left: 10%;
+}  */
+
+/* .parallax-main {
+    position: relative;
+    overflow: hidden;
+}
+
+.parallax {
+    position: relative;
+    margin: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100vw;
+
+} */
+
+.parallax-image {
+    width: 100vw;
+    /* height: auto; */
+    transform: translateZ(-1px) scale(2);
+    position: absolute;
+}
+
+.section1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    width: 100%;
+    transform-style: preserve-3d;
+}
+
+.text {
+    font-size: 15vw;
+    text-align: center;
+    color: white;
+    padding: 10px;
+} 

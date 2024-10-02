@@ -1,0 +1,19 @@
+.text-twisting-effect {
+    display: inline-block;
+    transform: translate(0%, -100%) rotate(-7deg);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.4s ease, opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.text-twisting-effect:hover {
+    transform: translate(0%, 0%) rotate(0deg);
+    opacity: 1;
+    visibility: visible;
+}
+
+.text-twisting-effect:not(:hover) {
+    transform: translate(0%, -100%) rotate(7deg);
+    opacity: 0;
+    visibility: hidden;
+}
