@@ -6,7 +6,7 @@ require('dotenv').config();
 const app = express();
 const port = process.env.PORT || 3000;
 
-mongoose.connect("mongodb+srv://144singhsarthak:2C8AmRViNzakr6Ii@cluster0.xqv8yjw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+mongoose.connect(process.env.MONGO_URI)
     .then(() => {
         console.log('Connected to MongoDB');
     }).catch(err => {
